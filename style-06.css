@@ -1,33 +1,47 @@
-/*
- * CSS File for the solution
- * Tutorial 04
- * Step 06
- * Instructions are in the comments below
- */
+header {
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 20px;
+}
 
-/* YOU DO NOT HAVE TO USE THE SAME COLORS AS THE SOLUTION */
-/* YOU DO NOT HAVE TO USE THE CSS SELECTORS BELOW - THEY ARE JUST SUGGESTIONS */
-/* YOU CAN CHANGE THE HTML CODE IF YOU WANT - BUT IT WILL WORK WITHOUT ANY CHANGES */
-/* YOU CAN CHANGE THE LOGO AS WELL IF YOU WANT */
+.logo-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
 
-header {}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
 
-.logo-heading-wrapper {}
-
-header nav {}
-
-/* This removes the discs / bullets from the list items */
 header nav ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-header nav ul li {}
+header nav ul li {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
-header nav ul li a {}
+header nav ul li a {
+  color: #f1faee;
+  text-decoration: none;
+}
 
-header nav ul li a:hover {}
+header nav ul li a:hover {
+  color: pink;
+text-decoration: underline;
+}
 
 /*
  * YOU ARE DONE WITH THIS FILE
