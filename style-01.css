@@ -1,130 +1,197 @@
-/*
- * CSS File for the solution
- * Tutorial 04
- * Step 01
- * Instructions are in the comments below
- */
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-/*
- * YOU ARE DONE WITH THIS FILE
- *
- * DONT MODIFY THE CODE
- * BELOW THIS LINE
- */
-
-.flex-container {
-  border: 1px solid #f1faee;
-  border-radius: 10px;
-}
-
-.item {
-  text-align: center;
-  max-width: 100px;
-  padding: 40px;
-  margin: 0px;
-  text-align: center;
-  border-radius: 10px;
-
-  background-color: #1d3557;
-}
-
-.item:first-child {
-  margin-left: 0px;
-}
-
-.item:last-child {
-  background-color: #e63946;
-  margin-right: 0px;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-/* Styles for the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f1faee;
-  color: #242121;
-  font-size: 1.5rem;
-  line-height: 1.6;
+  background-color: #24182c;
+}
 
-  min-width: 100%;
-  min-height: 100%;
 
-  /* Flex directives */
+#logo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+#logo img {
+  max-width: 100%;
+}
+
+
+header {
+  color: white;
+}
+
+
+#description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+#book-appointment-now {
+  background: none;
+  border: none;
+  padding: 0;
+
+
+}
+
+
+#book-appointment-now ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#book-appointment-now li {
+  display: inline;
+  margin-right: 10px;
+}
+
+
+#book-appointment-now a {
+  text-decoration: none;
+  position: relative;
+  color: #914d77;
+}
+
+
+#book-appointment-now a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease;
+}
+
+
+#book-appointment-now a:hover::before {
+  transform: scaleX(1);
+}
+
+
+main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-/* The first item in the flex container will be the header */
-header {
-  background-color: #e63946;
-  color: #ffffff;
-
-  /* Flex directives */
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-header h2 {
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 1rem;
-}
 
-/* The second item in the flex container will be the main content */
-main {
-  /* Grow to fill the remaining space */
-  flex: 1;
-
-  /* Create a nested flex container */
+.ad-card-container, .ad-card-container-2 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-/* Styles for the box inside main */
-main .box-container {
-  padding: 50px;
-  width: 500px;
-  max-width: 80%;
-  margin: 0 auto;
-  background-color: #457b9d;
-  color: #f1faee;
-  border-radius: 20px;
-  box-shadow: #315a72 0px 8px 40px;
-}
 
-/* Styles for the headings */
-main h1 {
-  font-size: 1.5rem;
-  margin: 0 0 1rem 0;
-  color: #f5f5f5;
-}
-
-footer {
-  padding: 1rem;
-  background-color: #1d3557;
-  color: #f1faee;
-  font-size: 0.9rem;
+section {
+  flex: 1;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 300px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.exterior-img,
+.interior-img,
+.interior-img-2 {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+.price {
+  font-weight: bold;
+  color: #26a01f;
+  margin-top: 20px;
+ 
+}
+
+
+#appointment a {
+  text-decoration: none;
+  color: #854d82;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.price {
+  font-weight: bold;
+  color: #854d82;
+}
+
+
+#appointment {
+  margin-top: 10px;
+}
+
+
+#appointment a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  background-color: #854d82;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.slogen {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(208, 208, 2);
+}
+
+
+.semi-title {
+  color: rgb(208, 208, 2);
+}
+
+
+.contact ul {
+  text-align: start;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+}
+
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+
+#book-now {
+  margin-top: 20px;
+  text-align: start;
+  font-size: 1.1rem;
 }
